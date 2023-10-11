@@ -11,9 +11,9 @@
 
 ### Association
 
-- has_many :monitors
+- has_many :monitorings
 
-## monitors テーブル
+## monitorings テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
