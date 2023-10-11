@@ -21,7 +21,7 @@
 | mind       | text       |                                |
 | feel       | text       |                                |
 | body       | text       |                                |
-| action     | text       |                                |
+| behavior   | text       |                                |
 | user       | references | null: false, foreign_key: true |
 
 ### Association

@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_11_090640) do
     t.text "mind"
     t.text "feel"
     t.text "body"
-    t.text "action"
+    t.text "behavior"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

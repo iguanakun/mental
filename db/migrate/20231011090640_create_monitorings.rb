@@ -5,7 +5,7 @@ class CreateMonitorings < ActiveRecord::Migration[7.0]
       t.text :mind
       t.text :feel
       t.text :body
-      t.text :action
+      t.text :behavior
       t.references :user, null:false, foreign_key:true
       t.timestamps
     end
