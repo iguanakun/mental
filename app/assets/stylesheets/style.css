@@ -44,7 +44,7 @@
 }
 
 .user-login{
-  width: 128px;
+  width: 104px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -53,8 +53,9 @@
 }
 
 .user-reg{
-  width: 128px;
+  width: 104px;
   height: 100%;
+  margin-right: 16px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -98,16 +99,56 @@
 
 .main{
   width: 880px;
-  height: 256px;
-  background-color: red;
+  height: 456px;
   margin-left: 280px;
 }
 
 .main-contents{
-
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: flex;
 }
 
+.main-contents__square{
+  width: 12px;
+  height: 40px;
+  background-color: #aef5a3;
+  margin-right: 16px;
+}
 
+.main-contents__title{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.main-monitor{
+  margin-left: 28px;
+}
+
+.main-monitor__title{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.main-monitor__info{
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.main-monitor__btn{
+  width: 200px;
+  height: 56px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #4FE358;
+  border-radius: 16px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /***********************************************
 フッター
@@ -118,4 +159,14 @@
   width: 1440px;
   height: 56px;
   background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title{
+  color:#8f8f8f;
+  font-size: 16px;
+
 }
