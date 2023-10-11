@@ -1,0 +1,58 @@
+<%= render "monitors/shared/header" %>
+
+
+<div class="monitor-main">
+  <%= form_with local: true do |f| %>
+  <div class="monitor-contents">
+    <div class="monitor-wrapper">
+      <div class="monitor-circle"></div>
+      <div class="monitor-item">状況</div>
+    </div>
+      <div class="monitor-info">どんなことがありましたか？</div>
+    <%= f.text_area :hoge, class:"monitor-text", placeholder:"" ,rows:"3" ,maxlength:"40000" %>
+  </div>
+
+  <div class="monitor-contents">
+    <div class="monitor-wrapper">
+      <div class="monitor-circle"></div>
+      <div class="monitor-item">思考</div>
+    </div>
+      <div class="monitor-info">どんな考え/感覚/衝動が出てきましたか？</div>
+    <%= f.text_area :hoge, class:"monitor-text", placeholder:"" ,rows:"5" ,maxlength:"40000" %>
+  </div>
+
+  <div class="monitor-contents">
+    <div class="monitor-wrapper">
+      <div class="monitor-circle"></div>
+      <div class="monitor-item">感情</div>
+    </div>
+      <div class="monitor-info">どんな感情でしたか？　例）喜び、愛、好奇心、怒り、悲しみ、</div>
+    <%= f.text_area :hoge, class:"monitor-text", id:"monitor-text__feel", placeholder:"" ,rows:"2" ,maxlength:"40000" %>
+  </div>
+
+  <div class="monitor-contents">
+    <div class="monitor-wrapper">
+      <div class="monitor-circle"></div>
+      <div class="monitor-item">身体反応</div>
+    </div>
+      <div class="monitor-info">体にどんな反応がありましたか？　例）怒りで顔が熱い、恐怖で喉をしめつけられる</div>
+    <%= f.text_area :hoge, class:"monitor-text", placeholder:"" ,rows:"2" ,maxlength:"40000" %>
+  </div>
+
+  <div class="monitor-contents">
+    <div class="monitor-wrapper">
+      <div class="monitor-circle"></div>
+      <div class="monitor-item">行動</div>
+    </div>
+      <div class="monitor-info">出来事があった時、どんな行動をしましたか？　例）気まずさで周囲を見渡す、暴言を言う</div>
+    <%= f.text_area :hoge, class:"monitor-text", placeholder:"" ,rows:"3" ,maxlength:"40000" %>
+  </div>
+
+  <div class="monitor-btn-contents">
+    <%= f.submit "作成する" ,class:"monitor-btn" %>
+  </div>
+  <% end %>
+</div>
+
+
+<%= render "monitors/shared/footer" %>
