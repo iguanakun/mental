@@ -1,6 +1,10 @@
 /***********************************************
 ヘッダー
 ************************************************/
+a{
+  text-decoration: none;
+}
+
 .header{
   width: 1440px;
   height: 56px;
@@ -52,7 +56,11 @@
   flex-direction: column;
 }
 
-.user-reg{
+.user-login a{
+  color: black;
+}
+
+.user-reg, .user-logout{
   width: 104px;
   height: 100%;
   margin-right: 16px;
@@ -60,4 +68,8 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
+}
+
+.user-reg a, .user-logout a{
+  color: black;
 }
