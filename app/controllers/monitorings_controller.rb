@@ -11,10 +11,14 @@ class MonitoringsController < ApplicationController
   def create
     @monitoring = Monitoring.new(monitoring_params)
     if @monitoring.save
-      redirect_to root_path
+      redirect_to lists_monitorings_path
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def lists
+    @monitorings = current_user.monitorings
   end
 
   private

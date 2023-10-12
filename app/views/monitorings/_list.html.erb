@@ -1,0 +1,18 @@
+<div class="monitor-list">
+  <div class="monitor-list-upper">
+    <div class="monitor-list__date"><%= list.created_at.strftime("%Y/%m/%d") %></div>
+    <div class="monitor-list__option"></div>
+  </div>
+  <div class="monitor-list-content">
+    <div class="monitor-list-item">状況</div>
+    <div class="monitor-list-text"><%= list.fact %></div>
+  </div>
+  <div class="monitor-list-content">
+    <div class="monitor-list-item">思考</div>
+    <div class="monitor-list-text"><%= list.mind %></div>
+  </div>
+  <div class="monitor-list-content">
+    <div class="monitor-list-item">感情</div>
+    <div class="monitor-list-text"><%= list.feel %></div>
+  </div>
+</div>
