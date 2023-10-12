@@ -1,6 +1,7 @@
 class MonitoringsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
   before_action :move_to_index, only: [:show]
+  before_action :set_monitoring, only: [:show, :edit]
 
   def index
   end
@@ -19,7 +20,18 @@ class MonitoringsController < ApplicationController
   end
 
   def show
+  end
+
+  def edit
+  end
+
+  def update
     @monitoring = Monitoring.find(params[:id])
+    if @monitoring.update(monitoring_params)
+      redirect_to lists_monitorings_path
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def lists
@@ -37,6 +49,10 @@ class MonitoringsController < ApplicationController
     if current_user.id != monitoring.user.id
       redirect_to root_path
     end
+  end
+
+  def set_monitoring
+    @monitoring = Monitoring.find(params[:id])
   end
 
 end
