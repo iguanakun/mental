@@ -1,0 +1,33 @@
+<%= render "monitorings/shared/header" %>
+<%= render "monitorings/shared/header-margin" %>
+
+<div class="monitor-lists">
+  <div class="monitor-list">
+    <div class="monitor-list-upper">
+      <div class="monitor-list__date"><%= @monitoring.created_at.strftime("%Y/%m/%d %H:%M") %></div>
+      <div class="monitor-list__option"></div>
+    </div>
+    <div class="monitor-list-content">
+      <div class="monitor-list-item">状況</div>
+      <div class="monitor-list-text"><%= @monitoring.fact %></div>
+    </div>
+    <div class="monitor-list-content">
+      <div class="monitor-list-item">思考</div>
+      <div class="monitor-list-text"><%= @monitoring.mind %></div>
+    </div>
+    <div class="monitor-list-content">
+      <div class="monitor-list-item">感情</div>
+      <div class="monitor-list-text"><%= @monitoring.feel %></div>
+    </div>
+    <div class="monitor-list-content">
+      <div class="monitor-list-item">身体反応</div>
+      <div class="monitor-list-text"><%= @monitoring.body %></div>
+    </div>
+    <div class="monitor-list-content">
+      <div class="monitor-list-item">行動</div>
+      <div class="monitor-list-text"><%= @monitoring.behavior %></div>
+    </div>
+  </div>
+
+  <%= link_to "一覧にもどる", lists_monitorings_path, class:"monitor-show__btn" %>
+</div>

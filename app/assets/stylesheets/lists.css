@@ -22,7 +22,7 @@
 }
 
 .monitor-list__date{
-  width: 72px;
+  width: 144px;
   height: 16px;
   font-size: 12px;
 }
@@ -38,7 +38,7 @@
 }
 
 .monitor-list-item{
-  width: 48px;
+  width: 96px;
   height: 24px;
   font-size: 18px;
   margin-bottom: 4px;
