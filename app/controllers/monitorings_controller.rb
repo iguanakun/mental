@@ -17,6 +17,10 @@ class MonitoringsController < ApplicationController
     end
   end
 
+  def show
+    @monitoring = Monitoring.find(params[:id])
+  end
+
   def lists
     @monitorings = current_user.monitorings
   end
