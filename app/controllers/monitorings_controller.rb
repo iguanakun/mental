@@ -17,6 +17,9 @@ class MonitoringsController < ApplicationController
     end
   end
 
+  def lists
+  end
+
   private
 
   def monitoring_params
