@@ -18,7 +18,7 @@ class MonitoringsController < ApplicationController
   end
 
   def lists
-    @monitorings = Monitoring.includes(:user)
+    @monitorings = current_user.monitorings
   end
 
   private
