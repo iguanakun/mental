@@ -11,9 +11,9 @@
 
 ### Association
 
-- has_many :monitors
+- has_many :monitorings
 
-## monitors テーブル
+## monitorings テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
@@ -21,7 +21,7 @@
 | mind       | text       |                                |
 | feel       | text       |                                |
 | body       | text       |                                |
-| action     | text       |                                |
+| behavior   | text       |                                |
 | user       | references | null: false, foreign_key: true |
 
 ### Association
