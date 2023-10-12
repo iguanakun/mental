@@ -23,7 +23,7 @@ class MonitoringsController < ApplicationController
   end
 
   def lists
-    @monitorings = current_user.monitorings
+    @monitorings = current_user.monitorings.order("created_at DESC")
   end
 
   private
