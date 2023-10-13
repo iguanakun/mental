@@ -12,6 +12,7 @@
   border-radius: 16px;
   border: solid 1px #cccccc;
   padding: 16px 24px 24px 24px;
+  position: relative;
 }
 
 .monitor-list-upper{
@@ -27,9 +28,42 @@
   font-size: 12px;
 }
 
-.monitor-list__option{
-  width: 48px;
-  height: 24px;
+.monitor-list-more{
+  cursor: pointer;
+  width: 80px;
+  height: 32px;
+  text-align: right;
+  position: relative;
+}
+
+.monitor-list-more:hover .monitor-list-more__items {
+  display: block;
+}
+
+.monitor-list-more__items {
+  text-align: left;
+  width: 80px;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  position: absolute;
+  display: none;
+}
+
+.monitor-list-more__items li {
+  border-bottom: 1px solid #ddd;
+  padding: 4px;
+}
+
+.monitor-list-more__items li:last-child {
+  border-bottom: 0;
+}
+
+.monitor-list-more__items li:hover {
+  background-color: #57C3E9;
+  color: #fff;
 }
 
 .monitor-list-content{
