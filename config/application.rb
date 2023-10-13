@@ -12,6 +12,10 @@ module Mental
     config.load_defaults 7.0
     config.i18n.default_locale = :ja
     config.time_zone = 'Tokyo'
+
+    config.active_record.encryption.primary_key = ENV['ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY']
+    config.active_record.encryption.deterministic_key = ENV['ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY']
+    config.active_record.encryption.key_derivation_salt = ENV['ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT']
     config.active_record.encryption.support_unencrypted_data = true
 
     # Configuration for the application, engines, and railties goes here.
