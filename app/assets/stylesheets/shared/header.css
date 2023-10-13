@@ -66,3 +66,26 @@ a{
   text-align: center;
   flex-direction: column;
 }
+
+.navbar-memo{
+  width: 168px;
+  position: absolute;
+  background-color: #ffffff;
+  top: 56px;
+  left: 280px;
+  z-index:1;
+  border-radius: 16px;
+}
+
+.pulldown-list{
+  border-bottom: 1px solid #ccc; 
+  padding:10px 0 10px 28px;
+}
+
+.pulldown-list:last-child{
+  border-bottom: none;
+}
+
+.hidden{
+  display: none;
+}
