@@ -40,10 +40,6 @@ a{
   cursor: pointer;
 }
 
-.navbar__lists{
-
-}
-
 .header-user{
   height: 56px;
   display: flex;
@@ -83,6 +79,11 @@ a{
 .pulldown-list{
   border-bottom: 1px solid #ccc; 
   padding:10px 0 10px 28px;
+}
+
+.pulldown-list:hover{
+  background-color: #ecffe7;
+  color:green;
 }
 
 .pulldown-list:last-child{

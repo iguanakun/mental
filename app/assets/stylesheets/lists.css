@@ -15,6 +15,10 @@
   position: relative;
 }
 
+.monitor-list:hover{
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 .monitor-list-upper{
   display: flex;
   justify-content: space-between;
@@ -54,7 +58,7 @@
 
 .monitor-list-more__items li {
   border-bottom: 1px solid #ddd;
-  padding: 4px;
+  padding: 8px;
 }
 
 .monitor-list-more__items li:last-child {
