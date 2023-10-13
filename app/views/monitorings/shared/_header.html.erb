@@ -12,7 +12,6 @@
       </div>
     <% else %>
       <div class="user-login">
-        <%= link_to "ログイン", new_user_session_path %>
       </div>
       <div class="user-reg">
         <%= link_to "新規登録", new_user_registration_path %>
@@ -20,7 +19,7 @@
     <% end %>
   </div>
 <ul class="navbar-memo hidden" id="navbar-pulldown">
-  <li class="pulldown-list">メモを書く</li>
-  <li class="pulldown-list">メモ一覧</li>
+  <li class="pulldown-list"><%= link_to "メモを書く", new_monitoring_path %></li>
+  <li class="pulldown-list"><%= link_to "メモ一覧", lists_monitorings_path %></li>
 </ul>
 </div>
