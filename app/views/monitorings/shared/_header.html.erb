@@ -1,9 +1,8 @@
 <div class="header">
   <div class="header-main">
-    <!-- <div class="header-title">自分でできる心理療法</div> -->
     <%=link_to "自分でできる心理療法", root_path, class:"header-title" %>
-    <div class="navbar">
-      <div class="navbar__lists">エクササイズ</div>
+    <div class="navbar" id="navbar-items">
+      <div class="navbar__lists">エクササイズ▼</div>
     </div>
   </div>
   <div class="header-user">
@@ -20,4 +19,8 @@
       </div>
     <% end %>
   </div>
+<ul class="navbar-memo hidden" id="navbar-pulldown">
+  <li class="pulldown-list">メモを書く</li>
+  <li class="pulldown-list">メモ一覧</li>
+</ul>
 </div>
