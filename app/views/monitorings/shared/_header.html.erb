@@ -19,7 +19,7 @@
     <% end %>
   </div>
 <ul class="navbar-memo hidden" id="navbar-pulldown">
-  <li class="pulldown-list"><%= link_to "メモを書く", new_monitoring_path %></li>
-  <li class="pulldown-list"><%= link_to "メモ一覧", lists_monitorings_path %></li>
+  <%= link_to new_monitoring_path do %><li class="pulldown-list">メモを書く</li><% end %>
+  <%= link_to lists_monitorings_path do %><li class="pulldown-list">メモ一覧</li><% end %>
 </ul>
 </div>
