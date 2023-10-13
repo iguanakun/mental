@@ -37,10 +37,7 @@ a{
   justify-content: center;
   text-align: center;
   flex-direction: column;
-}
-
-.navbar__lists{
-
+  cursor: pointer;
 }
 
 .header-user{
@@ -68,18 +65,25 @@ a{
 }
 
 .navbar-memo{
-  width: 168px;
+  width: 166px;
   position: absolute;
   background-color: #ffffff;
   top: 56px;
   left: 280px;
   z-index:1;
-  border-radius: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
 }
 
 .pulldown-list{
   border-bottom: 1px solid #ccc; 
   padding:10px 0 10px 28px;
+}
+
+.pulldown-list:hover{
+  background-color: #ecffe7;
+  color:green;
 }
 
 .pulldown-list:last-child{
