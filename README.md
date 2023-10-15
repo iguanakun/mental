@@ -12,6 +12,7 @@
 ### Association
 
 - has_many :monitorings
+- has_many :temptations
 
 ## monitorings テーブル
 
@@ -22,6 +23,20 @@
 | feel       | text       |                                |
 | body       | text       |                                |
 | behavior   | text       |                                |
+| user       | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+
+## temptations テーブル
+
+| Column     | Type       | Options                        |
+| ---------- | ---------- | ------------------------------ |
+| event      | text       |                                |
+| talk       | text       |                                |
+| pay_price  | text       |                                |
+| get_out    | text       |                                |
 | user       | references | null: false, foreign_key: true |
 
 ### Association
