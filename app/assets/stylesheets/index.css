@@ -35,45 +35,67 @@
 
 .main{
   width: 880px;
-  height: 456px;
   margin-left: 280px;
 }
 
-.main-contents{
+.main-menu{
   margin-top: 40px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   display: flex;
 }
 
-.main-contents__square{
+.main-menu__square{
   width: 12px;
   height: 40px;
   background-color: #aef5a3;
   margin-right: 16px;
 }
 
-.main-contents__title{
+.main-menu__title{
   font-size: 28px;
   font-weight: 600;
 }
 
-.main-monitor{
+.main-contents{
   margin-left: 28px;
 }
 
-.main-monitor__title{
+.main-contents-wrapper{
+  display: flex;
+}
+
+.main-item__circle{
+  background-color: #aef5a3;
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  margin: 6px 16px 16px 0;
+}
+
+.main-contents__title{
   font-size: 24px;
   font-weight: 600;
 }
 
-.main-monitor__info{
+.main-contents-info{
+  margin-left: 40px;
+}
+
+.main-contents__text{
   font-size: 18px;
   margin-bottom: 32px;
 }
 
-.main-monitor__btn{
-  width: 200px;
+.main-contents__sub{
+  font-size: 12px;
+  color: #b9b9b9;
+  font-style: italic;
+}
+
+.main-contents__btn{
+  width: 280px;
   height: 56px;
+  margin-bottom: 64px;
   font-size: 24px;
   font-weight: 600;
   color: #ffffff;
