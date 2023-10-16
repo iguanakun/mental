@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_11_090640) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_16_034436) do
   create_table "monitorings", charset: "utf8", force: :cascade do |t|
     t.text "fact"
     t.text "mind"
@@ -21,6 +21,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_11_090640) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_monitorings_on_user_id"
+  end
+
+  create_table "temptations", charset: "utf8", force: :cascade do |t|
+    t.text "event"
+    t.text "talk"
+    t.text "cost"
+    t.text "get_out"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_temptations_on_user_id"
   end
 
   create_table "users", charset: "utf8", force: :cascade do |t|
@@ -36,4 +47,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_11_090640) do
   end
 
   add_foreign_key "monitorings", "users"
+  add_foreign_key "temptations", "users"
 end

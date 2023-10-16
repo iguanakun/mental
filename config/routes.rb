@@ -7,4 +7,5 @@ Rails.application.routes.draw do
       get 'lists'
     end
   end
+  resources :temptations, except: [:index]
 end
