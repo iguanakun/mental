@@ -13,14 +13,14 @@
       </ul>
     </div>
   </div>
-  <%#= link_to monitoring_path(list.id) do %>
+  <%= link_to temptation_path(list.id) do %>
   <div class="monitor-list-content">
-    <div class="monitor-list-item">状況</div>
+    <div class="monitor-list-item">思考に心を奪われた状況</div>
     <div class="monitor-list-text"><%= list.event %></div>
   </div>
   <div class="monitor-list-content">
-    <div class="monitor-list-item">思考</div>
+    <div class="monitor-list-item">思考はあなたを夢中にさせようと、何を言いましたか？</div>
     <div class="monitor-list-text"><%= list.talk %></div>
   </div>
-  <%# end %>
+  <% end %>
 </div>

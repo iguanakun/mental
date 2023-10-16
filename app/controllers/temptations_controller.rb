@@ -1,5 +1,7 @@
 class TemptationsController < ApplicationController
   before_action :authenticate_user!
+  before_action :move_to_index, only: [:show, :edit, :update, :destroy]
+  before_action :set_temptation, only: [:show, :edit]
 
   def new
     @temptation = Temptation.new
@@ -14,6 +16,17 @@ class TemptationsController < ApplicationController
     end
   end
 
+  def show
+  end
+
+  def edit
+    
+  end
+
+  def update
+    
+  end
+
   def lists
     @temptations = current_user.temptations.order("created_at DESC")
   end
@@ -22,5 +35,16 @@ class TemptationsController < ApplicationController
 
   def temptation_params
     params.require(:temptation).permit(:event, :talk, :cost, :get_out).merge(user_id: current_user.id)
+  end
+
+  def move_to_index
+    temptation = Temptation.find(params[:id])
+    if current_user.id != temptation.user.id
+      redirect_to root_path
+    end
+  end
+
+  def set_temptation
+    @temptation = Temptation.find(params[:id])
   end
 end
