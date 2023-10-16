@@ -8,10 +8,14 @@ class TemptationsController < ApplicationController
   def create
     @temptation = Temptation.new(temptation_params)
     if @temptation.save
-      # redirect_to lists_monitorings_path
+      redirect_to lists_temptations_path
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def lists
+    @temptations = current_user.temptations.order("created_at DESC")
   end
 
   private
