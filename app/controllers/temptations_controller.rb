@@ -31,6 +31,12 @@ class TemptationsController < ApplicationController
     end
   end
 
+  def destroy
+    temptation = Temptation.find(params[:id])
+    temptation.destroy
+    redirect_to lists_temptations_path
+  end
+
   def lists
     @temptations = current_user.temptations.order("created_at DESC")
   end
