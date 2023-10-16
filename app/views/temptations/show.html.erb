@@ -8,9 +8,9 @@
       <div class="monitor-list-more">
         <i class="fa-solid fa-chevron-down" style="color: #b9b9b9;"></i>
         <ul class="monitor-list-more__items">
-          <%#= link_to edit_monitoring_path(@temptation.id) do %>
+          <%= link_to edit_temptation_path(@temptation.id) do %>
           <li><i class="fa-solid fa-pen" aria-hidden="true"></i> 編集</li>
-          <%# end %>
+          <% end %>
           <%#= link_to monitoring_path(@temptation.id), data:{ turbo_method: :delete } do %>
           <li><i class="fa-regular fa-trash-can" aria-hidden="true"></i> 削除</li>
           <%# end %>

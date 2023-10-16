@@ -20,11 +20,15 @@ class TemptationsController < ApplicationController
   end
 
   def edit
-    
   end
 
   def update
-    
+    @temptation = Temptation.find(params[:id])
+    if @temptation.update(temptation_params)
+      redirect_to lists_temptations_path
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def lists
